@@ -1,7 +1,7 @@
 # Arduino Radar System with Distance Alert
 
 <p align="center">
-  <img src="assets/interface.png" width="900">
+  <img src="assets/radarinterface.png" width="900">
 </p>
 
 A real-time Arduino radar system built with an HC-SR04 ultrasonic sensor, SG90 servo motor, Processing visualization, and a passive buzzer for proximity alerts.
