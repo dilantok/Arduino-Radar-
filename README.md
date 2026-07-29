@@ -1,18 +1,18 @@
 # Arduino Radar System with Distance Alert
 
 <p align="center">
-  <img src="assets/radarinterface.png" width="900">
+  <img src="assets/radarinterface.png" width="900" alt="Arduino Radar Interface">
 </p>
 
-A real-time radar system developed with **Arduino Uno**, an **HC-SR04 ultrasonic sensor**, an **SG90 servo motor**, and **Processing**. The system continuously scans its surroundings, visualizes detected objects on a custom radar interface, and provides audible proximity alerts using a passive buzzer.
+A real-time radar system built with **Arduino Uno**, an **HC-SR04 ultrasonic sensor**, an **SG90 servo motor**, and **Processing**. The system scans its surroundings, detects nearby objects, visualizes them on a custom radar interface, and provides audible proximity alerts using a passive buzzer.
 
 ---
 
 ## Features
 
 - 📡 Real-time radar scanning
-- 📏 Distance measurement with the HC-SR04 ultrasonic sensor
-- 🔄 Continuous servo sweep (15°–165°)
+- 📏 Distance measurement using the HC-SR04 ultrasonic sensor
+- 🔄 Continuous servo sweep from **15° to 165°**
 - 💗 Custom Processing radar visualization
 - 🔔 Passive buzzer proximity alerts
 - ⚡ Live serial communication between Arduino and Processing
@@ -22,7 +22,7 @@ A real-time radar system developed with **Arduino Uno**, an **HC-SR04 ultrasonic
 ## Hardware
 
 <p align="center">
-  <img src="assets/hardware.jpg" width="600">
+  <img src="assets/hardware.jpg" width="600" alt="Hardware Setup">
 </p>
 
 | Component | Arduino Pin |
@@ -46,10 +46,10 @@ A real-time radar system developed with **Arduino Uno**, an **HC-SR04 ultrasonic
 ## How It Works
 
 1. The servo continuously sweeps between **15° and 165°**.
-2. The HC-SR04 measures the distance at every angle.
-3. Arduino sends the measured angle and distance to Processing through serial communication.
-4. Processing displays a real-time radar interface and highlights detected objects.
-5. The passive buzzer changes its tone depending on the object's distance.
+2. The HC-SR04 ultrasonic sensor measures the distance at each angle.
+3. Arduino sends the measured angle and distance to Processing via serial communication.
+4. Processing visualizes the radar sweep and highlights detected objects in real time.
+5. The passive buzzer changes its frequency depending on the measured distance.
 
 ### Distance Alert
 
@@ -85,13 +85,24 @@ Example:
 ```text
 Arduino-Radar/
 │
-├── radar.ino
-├── RadarDisplay.pde
 ├── assets/
 │   ├── radarinterface.png
 │   └── hardware.jpg
-├── README.md
+│
+├── radar.ino
+├── radarprocessor.pde
+└── README.md
 ```
+
+---
+
+## Getting Started
+
+1. Connect all hardware according to the wiring table.
+2. Upload `radar.ino` using the Arduino IDE.
+3. Close the Arduino Serial Monitor.
+4. Open `radarprocessor.pde` in Processing 4.
+5. Run the Processing sketch to view the live radar interface.
 
 ---
 
@@ -99,9 +110,9 @@ Arduino-Radar/
 
 - OLED display integration
 - RGB LED distance indicator
-- Portable battery-powered version
+- Adjustable alarm distance
+- Battery-powered portable version
 - ESP32 wireless monitoring
-- Adjustable alarm threshold
 - Data logging
 - Multiple scanning modes
 
@@ -109,4 +120,4 @@ Arduino-Radar/
 
 ## Author
 
-Developed by **Dilan Tok** as a personal Arduino and Processing project to explore real-time object detection, visualization, and embedded systems.
+Developed by **Dilan Tok** as a personal Arduino and Processing project to explore embedded systems, sensor integration, and real-time visualization.
