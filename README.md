@@ -113,8 +113,6 @@ Arduino-Radar/
 
 ## Preview
 
-(Add screenshots or GIF here.)
-
 Example:
 
 ```
