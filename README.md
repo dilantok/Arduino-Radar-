@@ -3,8 +3,7 @@
 ## Overview
 
 <p align="center">
-  <img src="assets/radargif.gif" width="900" alt="Arduino Radar Demo">
-</p>
+<img src="./assets/radargif.gif" width="900" alt="Arduino Radar Demo"></p>
 
 A real-time radar system developed using **Arduino Uno**, an **HC-SR04 ultrasonic sensor**, an **SG90 servo motor**, a **passive buzzer**, and **Processing**.
 
